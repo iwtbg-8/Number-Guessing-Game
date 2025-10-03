@@ -1,0 +1,101 @@
+/* Reset and base styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8; /* Light blue-gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Main container for the game elements */
+.game-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Styling the input label and field */
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+#myInput {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 1.2rem;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+#myInput:focus {
+    border-color: #3b82f6; /* Blue border on focus */
+    outline: none;
+}
+
+/* Styling the button */
+#myButton {
+    background-color: #3b82f6; /* Tailwind blue-500 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px #1d4ed8; /* Darker blue shadow */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#myButton:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+}
+
+#myButton:active {
+    background-color: #1e40af; /* Even darker blue on click */
+    transform: translateY(2px); /* Press down effect */
+    box-shadow: 0 2px #1d4ed8;
+}
+
+/* Styling the result text */
+#myH2 {
+    font-size: 1.5rem;
+    color: #1f2937; /* Dark gray */
+    margin-top: 15px;
+    min-height: 30px; /* To prevent layout shift */
+}
+
+#myH3 {
+    font-size: 1rem;
+    color: #6b7280; /* Medium gray */
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 600px) {
+    .game-container {
+        padding: 25px;
+        margin: 10px;
+    }
+    #myH2 {
+        font-size: 1.3rem;
+    }
+}
