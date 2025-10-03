@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Guess The Number Game</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <label for="myInput">Enter Number:</label>
-    <input type="text" id="myInput">
-    <button id="myButton">Enter</button> <br>
+    <div class="game-container">
+        <label for="myInput">Enter Your Guess (1-100):</label>
+        <input type="text" id="myInput" placeholder="Type a number">
+        <button id="myButton">Submit Guess</button>
+    
+        <h2 id="myH2"></h2>
+        <h2 id="myH3"></h2>
+    </div>
 
-    <h2 id="myH2"></h2>
-    <h2 id="myH3"></h2>
     <script src="index.js"></script>
 </body>
 </html>
